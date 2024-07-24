@@ -35,8 +35,14 @@ def tryDownloadFile(url, path):
 
 VERSION = '0.0.1'
 
-LICENSE = '''1. USE AT YOUR OWN RISK.\n2. MODIFY COPY & REDISTRIBUTE THIS SOURCE CODE AS YOU WISH.\n3. I AM NOT LIABLE FOR ANY DAMAGES TO YOUR COMPUTER'''
-print(LICENSE)
+try:
+    with open('LICENSE', 'r') as license_file:
+        LICENSE = license_file.read()
+        print(LICENSE)
+        input('Press ENTER to accept this license, hold Ctrl and press C to quit this program')
+except:
+    print('License file not found. If you don\'t know how to use git, you should not be using this tool.')
+    exit(0)
 
 GREETING = '\n\n---\ndownload-mrpack v{}\n---\n'.format(VERSION)
 print(GREETING)
