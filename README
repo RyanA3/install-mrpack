@@ -6,3 +6,8 @@ IF YOU HAVE NOT BACKED UP YOUR SYSTEM YOU SHOULD NOT USE THIS TOOL... AND THEN B
 This repo provides a python script that can be used to download, unzip, and install modpacks from .mrpack files
 It is targeted towards minecraft modpacks
 This lets you avoid having to an install an entire desktop application just to pull a couple of files from a CDN (almost like that should just be a feature on the website so that you dont have to install an entire desktop app just to install a list of files from an json file)
+
+# Installation Instructions
+1. Install python3
+2. Clone the repo
+3. run main.py
